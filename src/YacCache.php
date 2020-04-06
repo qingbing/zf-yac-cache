@@ -67,7 +67,7 @@ class YacCache extends ACache
      *
      * @return bool
      */
-    protected function setValue(string $id, string $value, $ttl): bool
+    protected function setValue(string $id, $value, $ttl): bool
     {
         return $this->yac->set($id, $value, $ttl);
     }
